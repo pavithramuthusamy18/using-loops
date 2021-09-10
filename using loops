@@ -1,0 +1,31 @@
+#include<iostream>
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+using namespace std;
+
+// program to check the eligibility of a candidate for voting
+int main()
+{
+     char name[20];
+	int age,i;
+	cout<<"----------------------------WELCOME----------------------------- \n";
+	cout<<"Please enter your details:\n";
+	cout<<"\t 1. Your Name:";
+	cin.getline(name,20);
+	cout<<"\n \t 2. Your Age:";
+	cin>>age;
+	if(age<18)
+	i=1;
+	else
+	i=2;
+	switch(i)
+	{case 1: cout<<"\nSORRY!!!!! YOU'RE NOT ELIGIBLE TO VOTE YET....\n THANK YOU!!!";
+	         break;
+	case 2: cout<<"\nYES!!!! YOU'RE ELIGIBILE TO VOTE. PLEASE VISIT CHAIRMAN FOR FURTHER DETAILS.\n THANK YOU!!!1";
+	         break;
+	default: cout<<"\n SORRY!!! YOU HAVE FILLED WRONG DETAILS!!! \n CHECK YOUR DETAILS AGAIN!!!!";
+	}
+return 0;
+
+}
